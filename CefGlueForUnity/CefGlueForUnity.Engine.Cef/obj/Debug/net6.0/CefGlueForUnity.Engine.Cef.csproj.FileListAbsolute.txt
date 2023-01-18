@@ -1,0 +1,15 @@
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/bin/Debug/net6.0/CefGlueForUnity.Engine.Cef
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/bin/Debug/net6.0/CefGlueForUnity.Engine.Cef.deps.json
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/bin/Debug/net6.0/CefGlueForUnity.Engine.Cef.runtimeconfig.json
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/bin/Debug/net6.0/CefGlueForUnity.Engine.Cef.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/bin/Debug/net6.0/CefGlueForUnity.Engine.Cef.pdb
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.csproj.AssemblyReference.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.GeneratedMSBuildEditorConfig.editorconfig
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.AssemblyInfoInputs.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.AssemblyInfo.cs
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.csproj.CoreCompileInputs.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/refint/CefGlueForUnity.Engine.Cef.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.pdb
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/CefGlueForUnity.Engine.Cef.genruntimeconfig.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Cef/obj/Debug/net6.0/ref/CefGlueForUnity.Engine.Cef.dll

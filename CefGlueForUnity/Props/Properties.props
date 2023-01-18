@@ -1,0 +1,19 @@
+﻿<Project>
+    <PropertyGroup>
+        <Authors>flashwade03</Authors>
+        <Configurations>Debug;Release;ReleaseUnity</Configurations>
+        <Platform>AnyCPU</Platform>
+        <LangVersion>10</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Release'Or'$(Configuration)'=='ReleaseUnity'">
+        <IsReleaseBuild>true</IsReleaseBuild>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(IsReleaseBuild)'=='true'">
+        <Optimize>true</Optimize>
+        <DebugType>none</DebugType>
+        <DebugSymbols>false</DebugSymbols>
+        <DefineConstants>$(DefineConstants);RELEASE</DefineConstants>
+    </PropertyGroup>
+</Project>

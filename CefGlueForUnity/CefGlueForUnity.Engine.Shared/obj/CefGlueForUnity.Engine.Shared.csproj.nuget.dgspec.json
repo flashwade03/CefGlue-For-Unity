@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Shared/CefGlueForUnity.Engine.Shared.csproj": {}
+  },
+  "projects": {
+    "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Shared/CefGlueForUnity.Engine.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Shared/CefGlueForUnity.Engine.Shared.csproj",
+        "projectName": "CefGlueForUnity.Engine.Shared",
+        "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Shared/CefGlueForUnity.Engine.Shared.csproj",
+        "packagesPath": "/Users/percent/.nuget/packages/",
+        "outputPath": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Engine.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/percent/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Shared/CefGlueForUnity.Shared.csproj": {
+                "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Shared/CefGlueForUnity.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Serilog.Formatting.Compact": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "System.CommandLine": {
+              "target": "Package",
+              "version": "[2.0.0-beta4.22272.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Shared/CefGlueForUnity.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Shared/CefGlueForUnity.Shared.csproj",
+        "projectName": "CefGlueForUnity.Shared",
+        "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Shared/CefGlueForUnity.Shared.csproj",
+        "packagesPath": "/Users/percent/.nuget/packages/",
+        "outputPath": "/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/CefGlueForUnity.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/percent/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

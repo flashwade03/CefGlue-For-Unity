@@ -1,0 +1,47 @@
+﻿<Properties StartupConfiguration="{7626CB4E-ECE6-41C1-A323-6456C3142852}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.Engines.Cef.CefGlueForUnity.Engine.Cef FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Props/Properties.props">
+    <Files>
+      <File FileName="../ThirdParty/cefglue/CefGlue/CefGlueForUnity.Engine.Shared/Class1.cs" />
+      <File FileName="../ThirdParty/cefglue/CefGlue/CefGlueForUnity.Engine.Shared/CefGlueForUnity.Engine.Shared.csproj" />
+      <File FileName="CefGlueForUnity.Engine.Cef/Program.cs" />
+      <File FileName="CefGlueForUnity.Shared/Class1.cs" />
+      <File FileName="CefGlueForUnity.Engine.Shared/Class1.cs" />
+      <File FileName="CefGlueForUnity.Engine.Shared/CefGlueForUnity.Engine.Shared.csproj" Line="2" Column="26" />
+      <File FileName="Props/Properties.props" Line="4" Column="67" />
+      <File FileName="Props/Defines.props" />
+      <File FileName="Props/Defines.targets" Line="10" Column="1" />
+      <File FileName="CefGlueForUnity.Shared/CefGlueForUnity.Shared.csproj" />
+      <File FileName="Props/.editorconfig" Line="4" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CefGlueForUnity" expanded="True">
+            <Node name="Engines" expanded="True">
+              <Node name="Cef" expanded="True">
+                <Node name="CefGlue" expanded="True">
+                  <Node name="CefGlueForUnity.Engine.Shared" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="CefGlueForUnity.Engine.Shared" expanded="True">
+                <Node name="Dependencies" expanded="True">
+                  <Node name="ProjectDependencies" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Props" expanded="True">
+              <Node name="/Users/percent/Projects/CefGlue-For-Unity/CefGlueForUnity/Props/Properties.props" selected="True" />
+            </Node>
+            <Node name="CefGlueForUnity.Shared" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CefGlueForUnity.Shared FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+</Properties>

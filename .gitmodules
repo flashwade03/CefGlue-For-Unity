@@ -1,0 +1,3 @@
+[submodule "ThirdParty/cefglue"]
+	path = ThirdParty/cefglue
+	url = git@gitlab.com:needhc03/cefglue.git

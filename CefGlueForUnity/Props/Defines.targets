@@ -1,0 +1,9 @@
+﻿<Project>
+    <PropertyGroup Condition="'$(IsWindowsBuild)'=='true'">
+        <DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(IsOSXBuild)'=='true'">
+        <DefineConstants>$(DefineConstants);MACOS</DefineConstants>
+    </PropertyGroup>
+</Project>
