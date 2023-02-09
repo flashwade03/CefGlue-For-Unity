@@ -1,0 +1,9 @@
+<linker>
+    <assembly fullname="CefForUnity.Shared">
+        <type fullname="CefForUnity.Shared.Core.IClientControls" preserve="all"/>
+        <type fullname="CefForUnity.Shared.Core.IEngineControls" preserve="all"/>
+        <type fullname="CefForUnity.Shared.Core.ClientControls" preserve="all"/>
+        <type fullname="CefForUnity.Shared.Core.EngineControls" preserve="all"/>
+        <type fullname="CefForUnity.Shared.Popups.*" preserve="all"/>
+    </assembly>
+</linker>

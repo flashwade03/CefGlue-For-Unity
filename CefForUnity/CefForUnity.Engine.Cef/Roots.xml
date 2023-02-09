@@ -1,0 +1,13 @@
+<linker>
+    <!-- Serilog쓰려면 이거 포함시켜야하나봄 -->
+    <assembly fullname="netstandard" preverve="all" />
+    <assembly fullname="FastRPC" preverve="all" />
+    <assembly fullname="System.CommandLine" preverve="all" />
+    <assembly fullname="System.IO.Pipes" preserve="all"/>
+    <assembly fullname="System.Core" preserve="all"/>
+    <assembly fullname="System.Runtime">
+        <type fullname="System.Threading.Tasks.TaskFactory" preserve="all"/>
+    </assembly>
+    <assembly fullname="Serilog.Formatting.Compact" preserve="all" />
+    <assembly fullname="mscorlib" preserve="all"/>
+</linker>

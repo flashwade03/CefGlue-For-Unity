@@ -1,0 +1,523 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="../NativeDefines.props" />
+    <Import Project="../Properties.props" />
+    
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <RuntimeIdentifiers>win-x64;osx-x64</RuntimeIdentifiers>
+        <Version>0.0.1</Version>
+        <DefineConstants>BROWSER_PROCESS</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(IsReleaseBuild)'=='true'">
+        <AllowedReferenceReleatedFileExtensions>
+            .allowedextension
+        </AllowedReferenceReleatedFileExtensions>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(IsReleaseBuild)'=='true'And'$(RuntimeIdentifier)'!=''">
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <PublishTrimmed>true</PublishTrimmed>
+        <DebuggerSupport>false</DebuggerSupport>
+        <TrimmerRemoveSymbols>true</TrimmerRemoveSymbols>
+        <MetadataUpdaterSupport>false</MetadataUpdaterSupport>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>
+        <EventSourceSupport>false</EventSourceSupport>
+        <EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>
+        <EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="../../ThirdParty/cefglue/CefGlue/CefGlue.csproj" />
+        <ProjectReference Include="../CefForUnity.Shared/CefForUnity.Shared.csproj" />
+        <PackageReference Include="ThisAssembly.AssemblyInfo" Version="1.0.10" PrivateAssets="all"/>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <TrimmerRootDescriptor Include="Roots.xml" />
+    </ItemGroup>
+    
+    <ItemGroup Condition="'$(IsWindowBuild)'=='true'">
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/*.dll" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+        
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/*.pak" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+        
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/*.bin" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+        
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/*.dat" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+        
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/*.json" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+    </ItemGroup>
+    
+    <ItemGroup Condition="'$(IsMacOsBuild)'=='true'">
+        <Content Include="../../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/libcef.dylib" Link="Libs/libcef.dylib">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extensions)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </Content>
+        
+        <Content Include="../../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Libraries/*.*" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </Content>
+        
+        <Content Include="../../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/**/*.*" Link="Libs/%(RecursiveDir)%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </Content>
+        
+        <Content Include="../../ThirdParty/cef/macosx64/*.txt" Link="Libs/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </Content>
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/chrome_elf.dll">
+            <Link>Libs/chrome_elf.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/d3compiler_47.dll">
+            <Link>Libs/d3compiler_47.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/vk_swiftshader.dll">
+            <Link>Libs/vk_swiftshader.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/libEGL.dll">
+            <Link>Libs/libEGL.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/libcef.dll">
+            <Link>Libs/libcef.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/vulkan-1.dll">
+            <Link>Libs/vulkan-1.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/libGLESv2.dll">
+            <Link>Libs/libGLESv2.dll</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/chrome_200_percent.pak">
+            <Link>Libs/chrome_200_percent.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/chrome_100_percent.pak">
+            <Link>Libs/chrome_100_percent.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/resources.pak">
+            <Link>Libs/resources.pak</Link>
+        </ContentWithTargetPath>
+        <ContetnWithTargetPath Update="../../ThirdParty/cef/window64/v8_context_snapshot.bin">
+            <Link>Libs/v8_context_snapshot.bin</Link>
+        </ContetnWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/snapshot_blob.bin">
+            <Link>Libs/snapshot_blob.bin</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/icudtl.dat">
+            <Link>Libs/icutdl.dat</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/vk_swiftshader_icd.json">
+            <Link>Libs/vk_swiftshader_icd.json</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ar.pak">
+            <Link>Libs/locales/ar.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/en-US.pak">
+            <Link>Libs/locales/en-US.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/lt.pak">
+            <Link>Libs/locales/lt.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/tr.pak">
+            <Link>Libs/locales/tr.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/te.pak">
+            <Link>Libs/locales/te.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/af.pak">
+            <Link>Libs/locales/af.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/lv.pak">
+            <Link>Libs/locales/lv.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/mr.pak">
+            <Link>Libs/locales/mr.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/zh-TW.pak">
+            <Link>Libs/locales/zh-TW.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ms.pak">
+            <Link>Libs/locales/ms.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/nl.pak">
+            <Link>Libs/locales/nl.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/bn.pak">
+            <Link>Libs/locales/bn.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/vi.pak">
+            <Link>Libs/locales/vi.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ur.pak">
+            <Link>Libs/locales/ur.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ta.pak">
+            <Link>Libs/locales/ta.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/zh-CN.pak">
+            <Link>Libs/locales/zh-CN.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ja.pak">
+            <Link>Libs/locales/ja.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/hi.pak">
+            <Link>Libs/locales/hi.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/en-GB.pak">
+            <Link>Libs/locales/en-GB.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/pl.pak">
+            <Link>Libs/locales/pl.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/sw.pak">
+            <Link>Libs/locales/sw.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/fa.pak">
+            <Link>Libs/locales/fa.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/el.pak">
+            <Link>Libs/locales/el.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/sv.pak">
+            <Link>Libs/locales/sv.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/sr.pak">
+            <Link>Libs/locales/sr.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/es-419.pak">
+            <Link>Libs/locales/es-419.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/fr.pak">
+            <Link>Libs/locales/fr.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ru.pak">
+            <Link>Libs/locales/ru.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/gu.pak">
+            <Link>Libs/locales/gu.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/id.pak">
+            <Link>Libs/locales/id.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/fil.pak">
+            <Link>Libs/locales/fil.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/sk.pak">
+            <Link>Libs/locales/sk.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ro.pak">
+            <Link>Libs/locales/ro.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/es.pak">
+            <Link>Libs/locales/es.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ko.pak">
+            <Link>Libs/locales/ko.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/hu.pak">
+            <Link>Libs/locales/hu.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/kn.pak">
+            <Link>Libs/locales/kn.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/fi.pak">
+            <Link>Libs/locales/fi.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/da.pak">
+            <Link>Libs/locales/da.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/sl.pak">
+            <Link>Libs/locales/sl.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/de.pak">
+            <Link>Libs/locales/de.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/it.pak">
+            <Link>Libs/locales/it.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/hr.pak">
+            <Link>Libs/locales/hr.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/he.pak">
+            <Link>Libs/locales/he.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/pt-PT.pak">
+            <Link>Libs/locales/pt-PT.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/et.pak">
+            <Link>Libs/locales/et.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/cs.pak">
+            <Link>Libs/locales/cs.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/nb.pak">
+            <Link>Libs/locales/nb.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/am.pak">
+            <Link>Libs/locales/am.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ml.pak">
+            <Link>Libs/locales/ml.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/uk.pak">
+            <Link>Libs/locales/uk.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/bg.pak">
+            <Link>Libs/locales/bg.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/th.pak">
+            <Link>Libs/locales/th.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/ca.pak">
+            <Link>Libs/locales/ca.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/pt-BR.pak">
+            <Link>Libs/locales/pt-BR.pak</Link>
+        </ContentWithTargetPath>
+        <ContentWithTargetPath Update="../../ThirdParty/cef/window64/locales/en-US.pak">
+            <Link>Libs/locales/en-US.pak</Link>
+        </ContentWithTargetPath>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Libraries/libEGL.dylib">
+            <Link>Libs/libEGL.dylib</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Libraries/vk_swiftshader_icd.json">
+            <Link>Libs/vk_swiftshader_icd.json</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Libraries/libvk_swiftshader.dylib">
+            <Link>Libs/libvk_swiftshader.dylib</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Libraries/libGLESv2.dylib">
+            <Link>Libs/libGLESv2.dylib</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/chrome_200_percent.pak">
+            <Link>Libs/./chrome_200_percent.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/chrome_100_percent.pak">
+            <Link>Libs/./chrome_100_percent.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/icudtl.dat">
+            <Link>Libs/./icudtl.dat</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/icudtl.dat">
+            <Link>Libs/./icudtl.dat</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/snapshot_blob.bin">
+            <Link>Libs/./snapshot_blob.bin</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/resources.pak">
+            <Link>Libs/./resources.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/v8_context_snapshot.x86_64.bin">
+            <Link>Libs/./v8_context_snapshot.x86_64.bin</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/Info.plist">
+            <Link>Libs/./Info.plist</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/de.lproj/locale.pak">
+            <Link>Libs/de.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/de.lproj/locale.pak">
+            <Link>Libs/de.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ur.lproj/locale.pak">
+            <Link>Libs/ur.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/he.lproj/locale.pak">
+            <Link>Libs/he.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ar.lproj/locale.pak">
+            <Link>Libs/ar.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/el.lproj/locale.pak">
+            <Link>Libs/el.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ja.lproj/locale.pak">
+            <Link>Libs/ja.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/fa.lproj/locale.pak">
+            <Link>Libs/fa.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/mr.lproj/locale.pak">
+            <Link>Libs/mr.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/en.lproj/locale.pak">
+            <Link>Libs/en.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/uk.lproj/locale.pak">
+            <Link>Libs/uk.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/es_419.lproj/locale.pak">
+            <Link>Libs/es_419.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/gu.lproj/locale.pak">
+            <Link>Libs/gu.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/zn_CN.lproj/locale.pak">
+            <Link>Libs/zn_CN.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/kn.lproj/locale.pak">
+            <Link>Libs/kn.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/nb.lproj/locale.pak">
+            <Link>Libs/nb.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/am.lproj/locale.pak">
+            <Link>Libs/am.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/es.lproj/locale.pak">
+            <Link>Libs/es.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/sw.lproj/locale.pak">
+            <Link>Libs/sw.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/sl.lproj/locale.pak">
+            <Link>Libs/sl.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/pt_BR.lproj/locale.pak">
+            <Link>Libs/pt_BR.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/pt_BR.lproj/locale.pak">
+            <Link>Libs/pt_BR.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/da.lproj/locale.pak">
+            <Link>Libs/da.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/et.lproj/locale.pak">
+            <Link>Libs/et.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/it.lproj/locale.pak">
+            <Link>Libs/it.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/bg.lproj/locale.pak">
+            <Link>Libs/bg.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/sk.lproj/locale.pak">
+            <Link>Libs/sk.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/pt_PT.lproj/locale.pak">
+            <Link>Libs/pt_PT.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/sr.lproj/locale.pak">
+            <Link>Libs/sr.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ms.lproj/locale.pak">
+            <Link>Libs/ms.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ta.lproj/locale.pak">
+            <Link>Libs/ta.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ml.lproj/locale.pak">
+            <Link>Libs/ml.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/sv.lproj/locale.pak">
+            <Link>Libs/sv.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/te.lproj/locale.pak">
+            <Link>Libs/te.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/cs.lproj/locale.pak">
+            <Link>Libs/cs.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ko.lproj/locale.pak">
+            <Link>Libs/ko.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/fil.lproj/locale.pak">
+            <Link>Libs/fil.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/hu.lproj/locale.pak">
+            <Link>Libs/hu.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/tr.lproj/locale.pak">
+            <Link>Libs/tr.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/pl.lproj/locale.pak">
+            <Link>Libs/pl.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/zh_TW.lproj/locale.pak">
+            <Link>Libs/zh_TW.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/en_GB.lproj/locale.pak">
+            <Link>Libs/en_GB.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/vi.lproj/locale.pak">
+            <Link>Libs/vi.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/lv.lproj/locale.pak">
+            <Link>Libs/lv.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/lt.lproj/locale.pak">
+            <Link>Libs/lt.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ru.lproj/locale.pak">
+            <Link>Libs/ru.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/af.lproj/locale.pak">
+            <Link>Libs/af.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/fr.lproj/locale.pak">
+            <Link>Libs/fr.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/fi.lproj/locale.pak">
+            <Link>Libs/fi.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/id.lproj/locale.pak">
+            <Link>Libs/id.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/nl.lproj/locale.pak">
+            <Link>Libs/nl.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/th.lproj/locale.pak">
+            <Link>Libs/th.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/bn.lproj/locale.pak">
+            <Link>Libs/bn.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ro.lproj/locale.pak">
+            <Link>Libs/ro.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/hr.lproj/locale.pak">
+            <Link>Libs/hr.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/hi.lproj/locale.pak">
+            <Link>Libs/hi.lproj/locale.pak</Link>
+        </Content>
+        <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/ca.lproj/locale.pak">
+            <Link>Libs/ca.lproj/locale.pak</Link>
+        </Content>
+    </ItemGroup>
+</Project>

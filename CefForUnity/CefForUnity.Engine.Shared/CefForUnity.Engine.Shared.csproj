@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="../Properties.props" />
+    
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <IsTrimmable>false</IsTrimmable>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Serilog" Version="2.12.0" />
+      <PackageReference Include="Serilog.Formatting.Compact" Version="1.1.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
+      <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="../CefForUnity.Shared/CefForUnity.Shared.csproj" />
+    </ItemGroup>
+</Project>

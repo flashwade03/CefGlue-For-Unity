@@ -1,0 +1,374 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Serilog/2.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Serilog.Formatting.Compact/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Serilog.Sinks.Console/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net5.0/Serilog.Sinks.Console.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.Console.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.CommandLine/2.0.0-beta4.22272.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CommandLine.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CommandLine.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/net6.0/cs/System.CommandLine.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/net6.0/de/System.CommandLine.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0/es/System.CommandLine.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0/fr/System.CommandLine.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0/it/System.CommandLine.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net6.0/ja/System.CommandLine.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0/ko/System.CommandLine.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0/pl/System.CommandLine.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/net6.0/pt-BR/System.CommandLine.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0/ru/System.CommandLine.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0/tr/System.CommandLine.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0/zh-Hans/System.CommandLine.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/net6.0/zh-Hant/System.CommandLine.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "CefForUnity.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FastPRC": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        }
+      },
+      "FastPRC/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "bin/placeholder/FastPRC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastPRC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Serilog/2.12.0": {
+      "sha512": "xaiJLIdu6rYMKfQMYUZgTy8YK7SMZjB4Yk50C/u//Z4OsvxkUfSPJy4nknfvwAC34yr13q7kcyh4grbwhSxyZg==",
+      "type": "package",
+      "path": "serilog/2.12.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/net47/Serilog.dll",
+        "lib/net47/Serilog.xml",
+        "lib/net5.0/Serilog.dll",
+        "lib/net5.0/Serilog.xml",
+        "lib/net6.0/Serilog.dll",
+        "lib/net6.0/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "lib/netstandard2.1/Serilog.dll",
+        "lib/netstandard2.1/Serilog.xml",
+        "serilog.2.12.0.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    },
+    "Serilog.Formatting.Compact/1.1.0": {
+      "sha512": "pNroKVjo+rDqlxNG5PXkRLpfSCuDOBY0ri6jp9PLe505ljqwhwZz8ospy2vWhQlFu5GkIesh3FcDs4n7sWZODA==",
+      "type": "package",
+      "path": "serilog.formatting.compact/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Serilog.Formatting.Compact.dll",
+        "lib/net452/Serilog.Formatting.Compact.xml",
+        "lib/netstandard1.1/Serilog.Formatting.Compact.dll",
+        "lib/netstandard1.1/Serilog.Formatting.Compact.xml",
+        "lib/netstandard2.0/Serilog.Formatting.Compact.dll",
+        "lib/netstandard2.0/Serilog.Formatting.Compact.xml",
+        "serilog.formatting.compact.1.1.0.nupkg.sha512",
+        "serilog.formatting.compact.nuspec"
+      ]
+    },
+    "Serilog.Sinks.Console/4.1.0": {
+      "sha512": "K6N5q+5fetjnJPvCmkWOpJ/V8IEIoMIB1s86OzBrbxwTyHxdx3pmz4H+8+O/Dc/ftUX12DM1aynx/dDowkwzqg==",
+      "type": "package",
+      "path": "serilog.sinks.console/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.Sinks.Console.dll",
+        "lib/net45/Serilog.Sinks.Console.xml",
+        "lib/net5.0/Serilog.Sinks.Console.dll",
+        "lib/net5.0/Serilog.Sinks.Console.xml",
+        "lib/netstandard1.3/Serilog.Sinks.Console.dll",
+        "lib/netstandard1.3/Serilog.Sinks.Console.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Console.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Console.xml",
+        "serilog.sinks.console.4.1.0.nupkg.sha512",
+        "serilog.sinks.console.nuspec"
+      ]
+    },
+    "System.CommandLine/2.0.0-beta4.22272.1": {
+      "sha512": "1uqED/q2H0kKoLJ4+hI2iPSBSEdTuhfCYADeJrAqERmiGQ2NNacYKRNEQ+gFbU4glgVyK8rxI+ZOe1onEtr/Pg==",
+      "type": "package",
+      "path": "system.commandline/2.0.0-beta4.22272.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/System.CommandLine.dll",
+        "lib/net6.0/System.CommandLine.pdb",
+        "lib/net6.0/System.CommandLine.xml",
+        "lib/net6.0/cs/System.CommandLine.resources.dll",
+        "lib/net6.0/de/System.CommandLine.resources.dll",
+        "lib/net6.0/es/System.CommandLine.resources.dll",
+        "lib/net6.0/fr/System.CommandLine.resources.dll",
+        "lib/net6.0/it/System.CommandLine.resources.dll",
+        "lib/net6.0/ja/System.CommandLine.resources.dll",
+        "lib/net6.0/ko/System.CommandLine.resources.dll",
+        "lib/net6.0/pl/System.CommandLine.resources.dll",
+        "lib/net6.0/pt-BR/System.CommandLine.resources.dll",
+        "lib/net6.0/ru/System.CommandLine.resources.dll",
+        "lib/net6.0/tr/System.CommandLine.resources.dll",
+        "lib/net6.0/zh-Hans/System.CommandLine.resources.dll",
+        "lib/net6.0/zh-Hant/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/System.CommandLine.dll",
+        "lib/netstandard2.0/System.CommandLine.pdb",
+        "lib/netstandard2.0/System.CommandLine.xml",
+        "lib/netstandard2.0/cs/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/de/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/es/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/fr/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/it/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/ja/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/ko/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/pl/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/pt-BR/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/ru/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/tr/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/zh-Hans/System.CommandLine.resources.dll",
+        "lib/netstandard2.0/zh-Hant/System.CommandLine.resources.dll",
+        "system.commandline.2.0.0-beta4.22272.1.nupkg.sha512",
+        "system.commandline.nuspec"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "CefForUnity.Shared/1.0.0": {
+      "type": "project",
+      "path": "../CefForUnity.Shared/CefForUnity.Shared.csproj",
+      "msbuildProject": "../CefForUnity.Shared/CefForUnity.Shared.csproj"
+    },
+    "FastPRC/0.0.1": {
+      "type": "project",
+      "path": "../../../FastRPC/projects/FastRPC/FastRPC/FastRPC.csproj",
+      "msbuildProject": "../../../FastRPC/projects/FastRPC/FastRPC/FastRPC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "CefForUnity.Shared >= 1.0.0",
+      "Serilog >= 2.12.0",
+      "Serilog.Formatting.Compact >= 1.1.0",
+      "Serilog.Sinks.Console >= 4.1.0",
+      "System.CommandLine >= 2.0.0-beta4.22272.1"
+    ]
+  },
+  "packageFolders": {
+    "/Users/percent/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/CefForUnity.Engine.Shared.csproj",
+      "projectName": "CefForUnity.Engine.Shared",
+      "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/CefForUnity.Engine.Shared.csproj",
+      "packagesPath": "/Users/percent/.nuget/packages/",
+      "outputPath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/percent/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/CefForUnity.Shared.csproj": {
+              "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/CefForUnity.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Serilog": {
+            "target": "Package",
+            "version": "[2.12.0, )"
+          },
+          "Serilog.Formatting.Compact": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "Serilog.Sinks.Console": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
+          "System.CommandLine": {
+            "target": "Package",
+            "version": "[2.0.0-beta4.22272.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="../Properties.props" />
+    
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
+        <AssemblyTitle>Cef For Unity Shared</AssemblyTitle>
+        <Description>Shared project for Cef Unity</Description>
+        <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+        <IsTrimmable>false</IsTrimmable>
+        <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+        <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)/GeneratedFiles</CompilerGeneratedFilesOutputPath>
+    </PropertyGroup>
+
+    <!-- Create debug symbols since this will be shared with Unity as well -->
+    <PropertyGroup Condition="'$(Configuration)'=='Release'Or'$(Configuration)'=='ReleaseUnity'">
+        <Optimize>true</Optimize>
+        <DebugType>pdbonly</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+
+    <!-- Xml file for Unity's code stripper -->
+    <ItemGroup>
+        <EmbeddedResource Include="link.xml">
+            <LogicalName>CefForUnity.Shared.xml</LogicalName>
+        </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\..\FastRPC\projects\FastRPC\FastRPC.Proxy.Generator\FastRPC.Proxy.Generator.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+      <ProjectReference Include="..\..\..\FastRPC\projects\FastRPC\FastRPC\FastRPC.csproj" />
+    </ItemGroup>
+
+    <!-- Shit to copy into the UWB Core package -->
+    <Target Condition="'$(Configuration)|$(Platform)|$(TargetFramework)'=='ReleaseUnity|AnyCPU|netstandard2.1'" Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Message Text="Copying shared to Unity package..." />
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).dll" DestinationFiles="../Packages/UnityWebBrowser/Plugins/$(AssemblyName).dll" />
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).xml" DestinationFiles="../Packages/UnityWebBrowser/Plugins/$(AssemblyName).xml" />
+        <Copy SourceFiles="$(OutputPath)$(AssemblyName).pdb" DestinationFiles="../Packages/UnityWebBrowser/Plugins/$(AssemblyName).pdb" />
+    </Target>
+</Project>

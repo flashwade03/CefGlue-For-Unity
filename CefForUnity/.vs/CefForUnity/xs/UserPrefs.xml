@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{6F776A2E-D77F-4D26-A17E-17D45D2E5423}|Default">
+  <MonoDevelop.Ide.ItemProperties.Engines.Cef.CefForUnity.Engine.Cef PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName=".editorconfig" />
+      <File FileName="NativeDefines.props" Line="9" Column="125" />
+      <File FileName="NativeDefines.targets" Line="1" Column="10" />
+      <File FileName="Properties.props" Line="20" Column="1" />
+      <File FileName="CefForUnity.Shared/Popups/IPopupEngineControls.cs" Line="9" Column="22" />
+      <File FileName="CefForUnity.Engine.Shared/Popups/EnginePopupManager.cs" Line="54" Column="8" />
+      <File FileName="CefForUnity.Shared/Popups/IPopupClientControls.cs" Line="8" Column="10" />
+      <File FileName="CefForUnity.Shared/Popups/EnginePopupInfo.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CefForUnity" expanded="True">
+            <Node name="Engines" expanded="True">
+              <Node name="CefForUnity.Engine.Shared" expanded="True">
+                <Node name="Popups" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Props" expanded="True" />
+            <Node name="CefForUnity.Shared" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="net6.0" expanded="True">
+                  <Node name="AssemblyDependencies" expanded="True" />
+                  <Node name="FrameworkReferences" expanded="True" />
+                </Node>
+                <Node name="netstandard2.1" expanded="True">
+                  <Node name="AssemblyDependencies" expanded="True" />
+                  <Node name="FrameworkReferences" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Popups" expanded="True">
+                <Node name="IPopupClientControls.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Engines.CefForUnity.Engine.Cef PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "DGm1caT/7guahkrWCRqfoIM0SubHjjjqoSNvuTQaEqAteWlPU8JnqNuCXhgoCqFe7SOqfbrkoY1rLWGeIUvOAw==",
+  "success": true,
+  "projectFilePath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/CefForUnity.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/percent/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/percent/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/percent/.nuget/packages/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg.sha512",
+    "/Users/percent/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.3/system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

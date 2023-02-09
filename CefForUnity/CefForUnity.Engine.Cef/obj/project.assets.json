@@ -1,0 +1,575 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "ThisAssembly.AssemblyInfo/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "ThisAssembly.Prerequisites": "1.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/ThisAssembly.AssemblyInfo.targets": {}
+        }
+      },
+      "ThisAssembly.Prerequisites/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/ThisAssembly.Prerequisites.props": {},
+          "build/netstandard2.0/ThisAssembly.Prerequisites.targets": {}
+        }
+      },
+      "CefForUnity.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FastPRC": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        }
+      },
+      "FastPRC/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "bin/placeholder/FastPRC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastPRC.dll": {}
+        }
+      },
+      "Xilium.CefGlue/106.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        }
+      }
+    },
+    "net6.0/osx-x64": {
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "ThisAssembly.AssemblyInfo/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "ThisAssembly.Prerequisites": "1.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/ThisAssembly.AssemblyInfo.targets": {}
+        }
+      },
+      "ThisAssembly.Prerequisites/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/ThisAssembly.Prerequisites.props": {},
+          "build/netstandard2.0/ThisAssembly.Prerequisites.targets": {}
+        }
+      },
+      "CefForUnity.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FastPRC": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        }
+      },
+      "FastPRC/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "bin/placeholder/FastPRC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastPRC.dll": {}
+        }
+      },
+      "Xilium.CefGlue/106.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        }
+      }
+    },
+    "net6.0/win-x64": {
+      "Microsoft.CSharp/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "ThisAssembly.AssemblyInfo/1.0.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "ThisAssembly.Prerequisites": "1.0.10"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/ThisAssembly.AssemblyInfo.targets": {}
+        }
+      },
+      "ThisAssembly.Prerequisites/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "build": {
+          "build/netstandard2.0/ThisAssembly.Prerequisites.props": {},
+          "build/netstandard2.0/ThisAssembly.Prerequisites.targets": {}
+        }
+      },
+      "CefForUnity.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FastPRC": "0.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CefForUnity.Shared.dll": {}
+        }
+      },
+      "FastPRC/0.0.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "bin/placeholder/FastPRC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FastPRC.dll": {}
+        }
+      },
+      "Xilium.CefGlue/106.1.1": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Xilium.CefGlue.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.CSharp/4.5.0": {
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "type": "package",
+      "path": "microsoft.csharp/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "ThisAssembly.AssemblyInfo/1.0.10": {
+      "sha512": "sRyCHgip35MsU/LroaDZ92BkLDWHxb5U4Sjf6YQliP+TQoztmRgdWx91KErq7Wugz7nDaHuU1t1Dj/DjDJX98w==",
+      "type": "package",
+      "path": "thisassembly.assemblyinfo/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/CSharp.sbntxt",
+        "analyzers/dotnet/cs/FSharp.sbntxt",
+        "analyzers/dotnet/cs/ThisAssembly.AssemblyInfo.dll",
+        "analyzers/dotnet/cs/VisualBasic.sbntxt",
+        "build/netstandard2.0/ThisAssembly.AssemblyInfo.targets",
+        "icon.png",
+        "lib/netstandard2.0/_._",
+        "thisassembly.assemblyinfo.1.0.10.nupkg.sha512",
+        "thisassembly.assemblyinfo.nuspec"
+      ]
+    },
+    "ThisAssembly.Prerequisites/1.0.10": {
+      "sha512": "h1EspNBRGtoePCDG2lT181UTy9BV5dgnCYlS/bhInWb0OUS1dX8A+Mcvk5vx3rB7StpSbKrJ4aFJXJzFs0kjhw==",
+      "type": "package",
+      "path": "thisassembly.prerequisites/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/ThisAssembly.Prerequisites.props",
+        "build/netstandard2.0/ThisAssembly.Prerequisites.targets",
+        "icon.png",
+        "lib/netstandard2.0/_._",
+        "thisassembly.prerequisites.1.0.10.nupkg.sha512",
+        "thisassembly.prerequisites.nuspec"
+      ]
+    },
+    "CefForUnity.Shared/1.0.0": {
+      "type": "project",
+      "path": "../CefForUnity.Shared/CefForUnity.Shared.csproj",
+      "msbuildProject": "../CefForUnity.Shared/CefForUnity.Shared.csproj"
+    },
+    "FastPRC/0.0.1": {
+      "type": "project",
+      "path": "../../../FastRPC/projects/FastRPC/FastRPC/FastRPC.csproj",
+      "msbuildProject": "../../../FastRPC/projects/FastRPC/FastRPC/FastRPC.csproj"
+    },
+    "Xilium.CefGlue/106.1.1": {
+      "type": "project",
+      "path": "../../ThirdParty/cefglue/CefGlue/CefGlue.csproj",
+      "msbuildProject": "../../ThirdParty/cefglue/CefGlue/CefGlue.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "CefForUnity.Shared >= 1.0.0",
+      "ThisAssembly.AssemblyInfo >= 1.0.10",
+      "Xilium.CefGlue >= 106.1.1"
+    ]
+  },
+  "packageFolders": {
+    "/Users/percent/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "0.0.1",
+    "restore": {
+      "projectUniqueName": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/CefForUnity.Engine.Cef.csproj",
+      "projectName": "CefForUnity.Engine.Cef",
+      "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/CefForUnity.Engine.Cef.csproj",
+      "packagesPath": "/Users/percent/.nuget/packages/",
+      "outputPath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/percent/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/CefForUnity.Shared.csproj": {
+              "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/CefForUnity.Shared.csproj"
+            },
+            "/Users/percent/Projects/CefGlue-For-Unity/ThirdParty/cefglue/CefGlue/CefGlue.csproj": {
+              "projectPath": "/Users/percent/Projects/CefGlue-For-Unity/ThirdParty/cefglue/CefGlue/CefGlue.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "ThisAssembly.AssemblyInfo": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.10, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.osx-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.osx-x64",
+            "version": "[6.0.13, 6.0.13]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[6.0.13, 6.0.13]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "osx-x64": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      }
+    }
+  }
+}

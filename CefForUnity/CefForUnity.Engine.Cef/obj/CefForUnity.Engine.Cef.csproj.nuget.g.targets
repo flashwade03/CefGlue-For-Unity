@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)thisassembly.prerequisites/1.0.10/build/netstandard2.0/ThisAssembly.Prerequisites.targets" Condition="Exists('$(NuGetPackageRoot)thisassembly.prerequisites/1.0.10/build/netstandard2.0/ThisAssembly.Prerequisites.targets')" />
+    <Import Project="$(NuGetPackageRoot)thisassembly.assemblyinfo/1.0.10/build/netstandard2.0/ThisAssembly.AssemblyInfo.targets" Condition="Exists('$(NuGetPackageRoot)thisassembly.assemblyinfo/1.0.10/build/netstandard2.0/ThisAssembly.AssemblyInfo.targets')" />
+  </ImportGroup>
+</Project>
