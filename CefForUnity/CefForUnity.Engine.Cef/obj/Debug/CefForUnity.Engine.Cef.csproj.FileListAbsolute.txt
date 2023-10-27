@@ -4,6 +4,7 @@
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/libGLESv2.dylib
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/libvk_swiftshader.dylib
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/vk_swiftshader_icd.json
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/.DS_Store
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/locale.pak
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/chrome_100_percent.pak
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/bin/Debug/chrome_200_percent.pak

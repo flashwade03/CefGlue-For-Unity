@@ -4,10 +4,6 @@
         <DefineConstants>$(DefineConstants);WINDOWS</DefineConstants>
     </PropertyGroup>
 
-    <PropertyGroup Condition="'$(IsLinuxBuild)'=='true'">
-        <DefineConstants>$(DefineConstants);LINUX</DefineConstants>
-    </PropertyGroup>
-
     <PropertyGroup Condition="'$(IsMacOsBuild)'=='true'">
         <DefineConstants>$(DefineConstants);MACOS</DefineConstants>
     </PropertyGroup>

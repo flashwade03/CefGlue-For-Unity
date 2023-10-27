@@ -20,7 +20,7 @@ public abstract class EnginePopupInfo : IDisposable
 
     public abstract void ExecuteJS(string js);
     
-    public void Dispose()
+    public virtual void Dispose()
     {
     }
 }

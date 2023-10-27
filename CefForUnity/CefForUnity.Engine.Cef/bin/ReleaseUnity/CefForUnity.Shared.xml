@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CefForUnity.Shared</name>
+    </assembly>
+    <members>
+        <member name="F:CefForUnity.Shared.Core.Platform.Windows64">
+            <summary>
+                Windows 64-bit
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Core.Platform.Linux64">
+            <summary>
+                Linux 64-bit
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Core.Platform.MacOS">
+            <summary>
+                MacOS 64-bit (Intel)
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Events.MouseClickType.Left">
+            <summary>
+                Left button
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Events.MouseClickType.Middle">
+            <summary>
+                Middle button (scroll-wheel)
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Events.MouseClickType.Right">
+            <summary>
+                Right button
+            </summary>
+        </member>
+        <member name="T:CefForUnity.Shared.Events.MouseEventType">
+            <summary>
+                What event type was the mouse event
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Events.MouseEventType.Down">
+            <summary>
+                The button was pressed down
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.Events.MouseEventType.Up">
+            <summary>
+                The button was pressed up
+            </summary>
+        </member>
+        <member name="T:CefForUnity.Shared.Events.MouseClickEvent">
+            <summary>
+                Event for a mouse click
+            </summary>
+        </member>
+        <member name="P:CefForUnity.Shared.Events.MouseClickEvent.MouseX">
+            <summary>
+                The X position the mouse was clicked at
+            </summary>
+        </member>
+        <member name="P:CefForUnity.Shared.Events.MouseClickEvent.MouseY">
+            <summary>
+                The Y position the mouse was clicked at
+            </summary>
+        </member>
+        <member name="P:CefForUnity.Shared.Events.MouseClickEvent.MouseClickCount">
+            <summary>
+                How many times was the mouse clicked
+            </summary>
+        </member>
+        <member name="P:CefForUnity.Shared.Events.MouseClickEvent.MouseClickType">
+            <summary>
+                What was the <see cref="P:CefForUnity.Shared.Events.MouseClickEvent.MouseClickType" />
+            </summary>
+        </member>
+        <member name="P:CefForUnity.Shared.Events.MouseClickEvent.MouseEventType">
+            <summary>
+                What was the <see cref="P:CefForUnity.Shared.Events.MouseClickEvent.MouseEventType" />
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.FinalMode">
+            <summary>
+                The IME Final mode key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.HanjaMode">
+            <summary>
+                The IME Hanja mode key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.KanjiMode">
+            <summary>
+                The IME Kanji mode key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.Escape">
+            <summary>
+                The ESC key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.IMEConvert">
+            <summary>
+                The IME Convert key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.IMENonconvert">
+            <summary>
+                The IME NonConvert key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.IMEAccept">
+            <summary>
+                The IME Accept key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.IMEAceept">
+            <summary>
+                The IME Accept key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.IMEModeChange">
+            <summary>
+                The IME Mode change request.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.Space">
+            <summary>
+                The SPACEBAR key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.Prior">
+            <summary>
+                The PAGE UP key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.PageUp">
+            <summary>
+                The PAGE UP key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.Next">
+            <summary>
+                The PAGE DOWN key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.PageDown">
+            <summary>
+                The PAGE DOWN key.
+            </summary>
+        </member>
+        <member name="F:CefForUnity.Shared.WindowsKey.End">
+            <summary>
+                The END key.
+            </summary>
+        </member>
+        <member name="T:FastRPC.Proxy.Generated.ClientControls">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.#ctor(FastRPC.Communication.Core.Client)">
+            <summary>
+                Creates a new <see cref="T:FastRPC.Proxy.Generated.ClientControls"/> instance
+            </summary>
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.UrlChange(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.LoadStart(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.LoadFinish(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.TitleChange(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.ProgressChange(System.Double)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.FullScreen(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.ClientControls.Ready">
+            <inheritdoc />
+        </member>
+        <member name="T:FastRPC.Proxy.Generated.EngineControls">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.#ctor(FastRPC.Communication.Core.Client)">
+            <summary>
+                Creates a new <see cref="T:FastRPC.Proxy.Generated.EngineControls"/> instance
+            </summary>
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.GetPixels">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.Shutdown">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.SendKeyboardEvent(CefForUnity.Shared.Events.KeyboardEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.SendMouseMoveEvent(CefForUnity.Shared.Events.MouseScrollEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.SendMouseClickEvent(CefForUnity.Shared.Events.MouseClickEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.SendMouseScrollEvent(CefForUnity.Shared.Events.MouseScrollEvent)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.GetScrollPosition">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.GoForward">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.GoBack">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.Refresh">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.LoadUrl(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.LoadHtml(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.ExecuteJS(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.EngineControls.Resize(CefForUnity.Shared.Resolution)">
+            <inheritdoc />
+        </member>
+        <member name="T:FastRPC.Proxy.Generated.PopupClientControls">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.PopupClientControls.#ctor(FastRPC.Communication.Core.Client)">
+            <summary>
+                Creates a new <see cref="T:FastRPC.Proxy.Generated.PopupClientControls"/> instance
+            </summary>
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.PopupClientControls.PopupClose(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.PopupClientControls.PopupExecuteJS(System.Guid,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:FastRPC.Proxy.Generated.PopupEngineControls">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.PopupEngineControls.#ctor(FastRPC.Communication.Core.Client)">
+            <summary>
+                Creates a new <see cref="T:FastRPC.Proxy.Generated.PopupEngineControls"/> instance
+            </summary>
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.PopupEngineControls.OnPopup(System.Guid)">
+            <inheritdoc />
+        </member>
+        <member name="M:FastRPC.Proxy.Generated.PopupEngineControls.OnPopupDestroy(System.Guid)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

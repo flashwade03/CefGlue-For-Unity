@@ -1,0 +1,16 @@
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/thirdpartycredits.txt
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/CefForUnity.Engine.Shared.deps.json
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/CefForUnity.Engine.Shared.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/CefForUnity.Shared.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/FastPRC.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/CefForUnity.Shared.pdb
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/bin/Release/net6.0/FastPRC.pdb
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.csproj.AssemblyReference.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.AssemblyInfoInputs.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.AssemblyInfo.cs
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.csproj.CoreCompileInputs.cache
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.csproj.CopyComplete
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/CefForUnity.Engine.Shared.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/refint/CefForUnity.Engine.Shared.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Shared/obj/Release/net6.0/ref/CefForUnity.Engine.Shared.dll

@@ -1,5 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <Import Project="../NativeDefines.props" />
+    <Import Project="../Nativedefines.targets" />
     <Import Project="../Properties.props" />
     
     <PropertyGroup>
@@ -34,7 +35,8 @@
     <ItemGroup>
         <ProjectReference Include="../../ThirdParty/cefglue/CefGlue/CefGlue.csproj" />
         <ProjectReference Include="../CefForUnity.Shared/CefForUnity.Shared.csproj" />
-        <PackageReference Include="ThisAssembly.AssemblyInfo" Version="1.0.10" PrivateAssets="all"/>
+        <PackageReference Include="ThisAssembly.AssemblyInfo" Version="1.0.10" PrivateAssets="all" />
+        <ProjectReference Include="../CefForUnity.Engine.Shared/CefForUnity.Engine.Shared.csproj" />
     </ItemGroup>
     
     <ItemGroup>
@@ -71,6 +73,24 @@
             <TargetPath>%(Filename)%(Extension)</TargetPath>
             <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
         </ContentWithTargetPath>
+
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/LICENSE.txt" Link="Libs\LICENSE.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>LICENSE.CEF.txt</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/README.txt" Link="Libs\README.txt">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>README.CEF.txt</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
+
+        <ContentWithTargetPath Include="../../ThirdParty/cef/window64/locales/*.pak" Link="Libs/locales/%(Filename)%(Extension)">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>locales/%(Filename)%(Extension)</TargetPath>
+            <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        </ContentWithTargetPath>
     </ItemGroup>
     
     <ItemGroup Condition="'$(IsMacOsBuild)'=='true'">
@@ -88,7 +108,7 @@
         
         <Content Include="../../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Resources/**/*.*" Link="Libs/%(RecursiveDir)%(Filename)%(Extension)">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <TargetPath>%(Filename)%(Extension)</TargetPath>
+            <TargetPath>%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
             <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
         </Content>
         
@@ -311,6 +331,7 @@
             <Link>Libs/locales/en-US.pak</Link>
         </ContentWithTargetPath>
     </ItemGroup>
+    
     <ItemGroup>
         <Content Update="../ThirdParty/cef/macosx64/Chromium Embedded Framework.framework/Libraries/libEGL.dylib">
             <Link>Libs/libEGL.dylib</Link>

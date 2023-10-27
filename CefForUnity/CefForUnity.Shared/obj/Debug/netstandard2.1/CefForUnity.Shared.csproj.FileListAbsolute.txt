@@ -1,6 +1,11 @@
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/thirdpartycredits.txt
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/CefForUnity.Shared.deps.json
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/CefForUnity.Shared.dll
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/CefForUnity.Shared.pdb
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Buffers.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Memory.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Numerics.Vectors.dll
+/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/FastPRC.dll
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/FastPRC.pdb
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/obj/Debug/netstandard2.1/CefForUnity.Shared.csproj.AssemblyReference.cache
@@ -11,8 +16,3 @@
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/obj/Debug/netstandard2.1/CefForUnity.Shared.csproj.CopyComplete
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/obj/Debug/netstandard2.1/CefForUnity.Shared.dll
 /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/obj/Debug/netstandard2.1/CefForUnity.Shared.pdb
-/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/thirdpartycredits.txt
-/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Buffers.dll
-/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Memory.dll
-/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Numerics.Vectors.dll
-/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/bin/Debug/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll

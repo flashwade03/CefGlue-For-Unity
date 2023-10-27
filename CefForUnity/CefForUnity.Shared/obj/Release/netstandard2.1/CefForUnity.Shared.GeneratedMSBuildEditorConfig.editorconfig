@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = CefForUnity.Shared
+build_property.ProjectDir = /Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Shared/

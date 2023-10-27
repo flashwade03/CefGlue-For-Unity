@@ -1,19 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "rQaFa+rb/uLoNe2Zv0CXvi4XsWH0o3+ValHS/lPqt1PgOzLZshPf6d9te/TNdF6IuIZBEaY9hF+0wn+qeyorvg==",
+  "dgSpecHash": "fzpMjKw0fJvpOUU9ko7oL91NSAMxXmJzPLvTgfmp0kRKqe0ddrkUUAEK5Ae/fb1UqNEeFoMUPM4/fBjh6acQ+A==",
   "success": true,
   "projectFilePath": "/Users/percent/Projects/CefGlue-For-Unity/CefForUnity/CefForUnity.Engine.Cef/CefForUnity.Engine.Cef.csproj",
   "expectedPackageFiles": [
     "/Users/percent/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/percent/.nuget/packages/serilog/2.12.0/serilog.2.12.0.nupkg.sha512",
+    "/Users/percent/.nuget/packages/serilog.formatting.compact/1.1.0/serilog.formatting.compact.1.1.0.nupkg.sha512",
+    "/Users/percent/.nuget/packages/serilog.sinks.console/4.1.0/serilog.sinks.console.4.1.0.nupkg.sha512",
+    "/Users/percent/.nuget/packages/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg.sha512",
     "/Users/percent/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
     "/Users/percent/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/percent/.nuget/packages/thisassembly.assemblyinfo/1.0.10/thisassembly.assemblyinfo.1.0.10.nupkg.sha512",
     "/Users/percent/.nuget/packages/thisassembly.prerequisites/1.0.10/thisassembly.prerequisites.1.0.10.nupkg.sha512",
-    "/Users/percent/.nuget/packages/microsoft.netcore.app.runtime.win-x64/6.0.13/microsoft.netcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "/Users/percent/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/6.0.13/microsoft.netcore.app.runtime.osx-x64.6.0.13.nupkg.sha512",
-    "/Users/percent/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/6.0.13/microsoft.aspnetcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
-    "/Users/percent/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/6.0.13/microsoft.aspnetcore.app.runtime.osx-x64.6.0.13.nupkg.sha512",
-    "/Users/percent/.nuget/packages/microsoft.netcore.app.host.win-x64/6.0.13/microsoft.netcore.app.host.win-x64.6.0.13.nupkg.sha512"
+    "/Users/percent/.nuget/packages/microsoft.netcore.app.runtime.win-x64/6.0.21/microsoft.netcore.app.runtime.win-x64.6.0.21.nupkg.sha512",
+    "/Users/percent/.nuget/packages/microsoft.netcore.app.runtime.osx-x64/6.0.21/microsoft.netcore.app.runtime.osx-x64.6.0.21.nupkg.sha512",
+    "/Users/percent/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/6.0.21/microsoft.aspnetcore.app.runtime.win-x64.6.0.21.nupkg.sha512",
+    "/Users/percent/.nuget/packages/microsoft.aspnetcore.app.runtime.osx-x64/6.0.21/microsoft.aspnetcore.app.runtime.osx-x64.6.0.21.nupkg.sha512",
+    "/Users/percent/.nuget/packages/microsoft.netcore.app.host.win-x64/6.0.21/microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
   ],
   "logs": []
 }

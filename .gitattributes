@@ -3,3 +3,5 @@
 ThirdParty/cef/window64/libcef.dll filter=lfs diff=lfs merge=lfs -text
 CefForUnity/CefForUnity.Engine.Cef/bin/Debug/libcef filter=lfs diff=lfs merge=lfs -text
 *libcef filter=lfs diff=lfs merge=lfs -text
+CefForUnity/CefForUnity.Engine.Cef/bin/Release/libcef filter=lfs diff=lfs merge=lfs -text
+CefForUnity/CefForUnity.Engine.Cef/bin/ReleaseUnity/libcef filter=lfs diff=lfs merge=lfs -text
